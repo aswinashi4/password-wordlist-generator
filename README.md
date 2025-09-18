@@ -23,62 +23,26 @@
 
 ---
 
-## Installation
+# Password Wordlist Generator
 
-## Installation
+**Educational Python tool to generate password wordlists** for ethical hacking practice, penetration testing in systems you own, and CTF challenges.
 
-1. **Clone the Repository:**
-
-```bash
-git clone https://github.com/aswinashi4/password-wordlist-generator.git
-cd password-wordlist-generator
-
-pip install -r requirements.txt
+> ⚠️ **Disclaimer:** This tool is intended only for educational purposes. Do **NOT** use it to access accounts without permission. Misuse may be illegal.
 
 ---
 
-## 3️⃣ Add a **Usage** Section
+## Installation
 
-Right after the installation, add:
-
-```markdown
-## Usage
-
-To generate a password wordlist, run:
-
-```bash
+# Clone your GitHub repository
+git clone https://github.com/aswinashi4/password-wordlist-generator.git && cd password-wordlist-generator && \
+# Install Python dependencies (if any)
+pip install -r requirements.txt && \
+# Add README.md or any changes
+git add README.md && \
+# Commit changes with a message
+git commit -m "Add installation and usage instructions" && \
+# Push to the main branch on GitHub
+git push origin main && \
+# Example command to run the password generator
 python generate_wordlist.py -w aswin,india --phone 78771252256 --phone-min 2 --phone-max 4 -s '@#' --caps --leet --years 2000 2004 --numbers 0 99 --include-common -o mywordlist.txt
 
-
--w aswin,india → Base words/names
-
---phone 78771252256 → Phone number prefixes
-
---phone-min 2 / --phone-max 4 → Number of phone digits to append
-
--s '@#' → Special characters
-
---caps → Capitalization variants
-
---leet → Leetspeak substitutions
-
---years 2000 2004 → Year range
-
---numbers 0 99 → Numeric suffixes
-
---include-common → Include common passwords
-
--o mywordlist.txt → Output file
-
-
-
----
-
-## 4️⃣ Commit and Push Changes
-
-Run the following commands in your terminal from the repository folder:
-
-```bash
-git add README.md
-git commit -m "Add installation and usage instructions"
-git push origin main
