@@ -25,3 +25,60 @@
 
 ## Installation
 
+## Installation
+
+1. **Clone the Repository:**
+
+```bash
+git clone https://github.com/aswinashi4/password-wordlist-generator.git
+cd password-wordlist-generator
+
+pip install -r requirements.txt
+
+---
+
+## 3️⃣ Add a **Usage** Section
+
+Right after the installation, add:
+
+```markdown
+## Usage
+
+To generate a password wordlist, run:
+
+```bash
+python generate_wordlist.py -w aswin,india --phone 78771252256 --phone-min 2 --phone-max 4 -s '@#' --caps --leet --years 2000 2004 --numbers 0 99 --include-common -o mywordlist.txt
+
+
+-w aswin,india → Base words/names
+
+--phone 78771252256 → Phone number prefixes
+
+--phone-min 2 / --phone-max 4 → Number of phone digits to append
+
+-s '@#' → Special characters
+
+--caps → Capitalization variants
+
+--leet → Leetspeak substitutions
+
+--years 2000 2004 → Year range
+
+--numbers 0 99 → Numeric suffixes
+
+--include-common → Include common passwords
+
+-o mywordlist.txt → Output file
+
+
+
+---
+
+## 4️⃣ Commit and Push Changes
+
+Run the following commands in your terminal from the repository folder:
+
+```bash
+git add README.md
+git commit -m "Add installation and usage instructions"
+git push origin main
