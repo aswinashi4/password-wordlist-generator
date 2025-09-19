@@ -36,13 +36,13 @@
 # Clone your GitHub repository
 git clone https://github.com/aswinashi4/password-wordlist-generator.git && cd password-wordlist-generator && \
 # Install Python dependencies (if any)
-pip install -r requirements.txt && \
+pip install -r requirements.txt 
 # Add README.md or any changes
-git add README.md && \
+git add README.md 
 # Commit changes with a message
-git commit -m "Add installation and usage instructions" && \
+git commit -m "Add installation and usage instructions" 
 # Push to the main branch on GitHub
-git push origin main && \
+git push origin main 
 # Example command to run the password generator
 python generate_wordlist.py -w aswin,india --phone 78771252256 --phone-min 2 --phone-max 4 -s '@#' --caps --leet --years 2000 2004 --numbers 0 99 --include-common -o mywordlist.txt
 
